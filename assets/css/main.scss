@@ -13,31 +13,41 @@
   font-style: normal;
 }
 
-// 3. Sovrascrittura Colori Istituzionali Custom SpA (#B9C9D5)
+// 3. PERSONALIZZAZIONI CUSTOM SPA
 
 // Applica il font a tutto il sito
 body {
   font-family: 'Titillium Web', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif !important;
 }
 
-// Colora la barra superiore (Masthead)
+/* --- FIX LOGO GIGANTE --- */
+/* Questo blocca l'immagine del logo ad un'altezza massima */
+.masthead__logo img {
+    max-height: 45px !important; /* Altezza fissa per stare nella barra */
+    width: auto !important;      /* Mantiene le proporzioni */
+    display: block;
+    margin-right: 15px;          /* Spazio tra logo e titolo (se presente) */
+}
+
+/* Colore sfondo Header (CMYK convertito #B9C9D5) */
 .masthead {
-  background-color: #B9C9D5 !important; // Il tuo colore CMYK convertito
+  background-color: #B9C9D5 !important;
   border-bottom: 1px solid #8fa1b3;
 }
 
-// Colora il menu di navigazione interno alla barra
+/* Colore sfondo menu interno (per sicurezza) */
 .masthead__inner-wrap {
   background-color: #B9C9D5 !important;
 }
 
-// Assicura che i link del menu siano leggibili (Grigio scuro)
+/* Colore dei link nel menu (Home, About, ecc) */
 .masthead__menu-item {
-  color: #2e3d49 !important; 
+  color: #2e3d49 !important; /* Grigio scuro Custom */
   font-weight: bold;
 }
 
-// Correzione per il logo (ridimensionamento se necessario)
-.masthead__menu-item--logo img {
-    max-height: 50px; // Aggiusta questo valore se il logo è troppo grande/piccolo
+/* Selettore specifico per il link del logo (per rimuovere decorazioni) */
+.masthead__logo a {
+    color: #2e3d49 !important;
+    text-decoration: none;
 }
