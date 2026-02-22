@@ -26,8 +26,8 @@ body {
    =============================== */
 
 .masthead {
-  background-color: #B9C9D5;
-  border-bottom: 1px solid #8fa1b3;
+  background-color: #D0E5F2;
+  box-shadow: 10px solid #E1EFF7;
 }
 
 /* Mantieni il layout originale del tema */
@@ -44,7 +44,7 @@ body {
 
 /* LOGO */
 .masthead__branding img {
-  max-height: 42px;   /* dimensione sicura */
+  max-height: 64px;   /* dimensione sicura */
   width: auto;
 }
 
