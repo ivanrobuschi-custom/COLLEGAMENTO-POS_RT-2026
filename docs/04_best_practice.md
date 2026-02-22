@@ -5,7 +5,6 @@ permalink: /Allegato-1_-Suggerimenti-pratici-POS-rt/
 sidebar:
   nav: "docs"
 ---
----
 layout: single
 title: "Scrivi Qui il Titolo della Pagina"
 sidebar:
