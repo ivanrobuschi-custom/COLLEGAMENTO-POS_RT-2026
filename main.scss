@@ -1,0 +1,79 @@
+---
+---
+@charset "utf-8";
+
+// 1. Importa il tema base
+@import "minimal-mistakes/skins/air"; 
+
+// 2. Caricamento Font
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('/TitilliumWeb-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif !important;
+}
+
+/* --- SOLUZIONE PER IL LOGO PROPORZIONATO --- */
+
+/* Regola 1: Contenitore principale della testata */
+.masthead {
+  background-color: #B9C9D5 !important;
+  border-bottom: 1px solid #8fa1b3;
+  padding: 0.5rem 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: wrap;
+}
+
+/* Regola 2: Contenitore branding (logo) */
+.masthead__branding {
+  max-width: 150px !important;
+  width: auto;
+  display: inline-flex !important;
+  align-items: center;
+  padding: 5px 0;
+  flex-shrink: 0;
+}
+
+/* Regola 3: Logo - altezza massima ridotta */
+.masthead img {
+  max-height: 35px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+/* Regola 4: Contenitore menu */
+.masthead__inner-wrap {
+  background-color: #B9C9D5 !important;
+  display: flex !important;
+  align-items: center !important;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Regola 5: Menu navigazione */
+.masthead__menu {
+  display: flex !important;
+  align-items: center;
+  flex: 1;
+  margin-left: 20px;
+  flex-wrap: wrap;
+}
+
+/* Link del menu */
+.masthead__menu-item {
+  color: #2e3d49 !important;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* Nasconde il titolo testuale se presente */
+.masthead__branding .site-title {
+  display: none !important;
+}
