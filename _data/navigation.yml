@@ -1,0 +1,20 @@
+# Menu laterale principale
+docs:
+  - title: "Normativa e Provvedimenti"
+    children:
+      - title: "Provvedimento AdE"
+        url: /provvedimento-del-31-ottobre-2025/
+      - title: "Guida Operativa"
+        url: /GuidaOperativa_POS-RT/
+      
+  - title: "Procedure Tecniche"
+    children:
+      - title: "Manuale Operativo"
+        url: /Allegato-2_-Manuale-Operativo/
+      - title: "Suggerimenti Pratici"
+        url: /Allegato-1_-Suggerimenti-pratici-POS-rt/
+
+  - title: "Supporto e FAQ"
+    children:
+      - title: "Domande Frequenti (FAQ)"
+        url: /FAQ_collegamento_POS_RT/
