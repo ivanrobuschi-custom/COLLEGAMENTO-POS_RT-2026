@@ -20,22 +20,35 @@ body {
   font-family: 'Titillium Web', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif !important;
 }
 
-/* --- FIX LOGO GIGANTE --- */
-/* Questo blocca l'immagine del logo ad un'altezza massima */
-.masthead__logo img {
-    max-height: 45px !important; /* Altezza fissa per stare nella barra */
-    width: auto !important;      /* Mantiene le proporzioni */
-    display: block;
-    margin-right: 15px;          /* Spazio tra logo e titolo (se presente) */
+/* --- FIX LOGO DEFINITIVO --- */
+
+/* 1. Blocca la larghezza del CONTENITORE del logo */
+.masthead__branding {
+    max-width: 250px !important; /* Impedisce al box del logo di allargarsi troppo */
+    min-width: 150px;
+    display: inline-block !important;
+    vertical-align: middle;
+    margin-right: 20px;
 }
 
-/* Colore sfondo Header (CMYK convertito #B9C9D5) */
+/* 2. Forza il ridimensionamento dell'IMMAGINE stessa */
+.masthead__branding img, .masthead__logo img {
+    height: 45px !important;    /* Altezza fissa */
+    width: auto !important;     /* Larghezza automatica in base all'altezza */
+    max-width: 100% !important; /* Non uscire mai dal contenitore */
+    object-fit: contain;
+    display: block;             /* Rimuove spazi vuoti sotto l'immagine */
+}
+
+/* 3. Colore sfondo Header (CMYK convertito #B9C9D5) */
 .masthead {
   background-color: #B9C9D5 !important;
   border-bottom: 1px solid #8fa1b3;
+  padding-top: 10px;    /* Un po' di aria sopra */
+  padding-bottom: 10px; /* Un po' di aria sotto */
 }
 
-/* Colore sfondo menu interno (per sicurezza) */
+/* Colore sfondo menu interno */
 .masthead__inner-wrap {
   background-color: #B9C9D5 !important;
 }
@@ -46,8 +59,13 @@ body {
   font-weight: bold;
 }
 
-/* Selettore specifico per il link del logo (per rimuovere decorazioni) */
-.masthead__logo a {
+/* Colore del link del logo */
+.masthead__branding a, .masthead__logo a {
     color: #2e3d49 !important;
     text-decoration: none;
+}
+
+/* Nasconde il titolo testuale se c'è il logo (opzionale, per pulizia) */
+.masthead__branding .site-title {
+    display: none; 
 }
