@@ -1,10 +1,9 @@
 ---
 layout: single
-title: "Dubbi o prolemi di collegamento?"
+title: "Dubbi o problemi di collegamento?"
 sidebar:
   nav: "docs"
 ---
-# Domande & Risposte - FAQ Tecniche POS-RT
 
 ## Ambito di Applicazione e Obblighi
 *   **Chi è obbligato?**

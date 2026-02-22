@@ -1,10 +1,9 @@
 ---
 layout: single
-title: "Manuale Operativo"
+title: "Manuale Operativo Procedure Portale AdE"
 sidebar:
   nav: "docs"
 ---
-# Manuale Operativo - Procedure Portale AdE
 
 ## Percorso di Accesso
 Per accedere alle funzionalità di collegamento, seguire rigorosamente il seguente percorso nel portale "Fatture e Corrispettivi":

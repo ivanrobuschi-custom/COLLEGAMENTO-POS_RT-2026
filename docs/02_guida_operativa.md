@@ -1,10 +1,9 @@
 ---
 layout: single
-title: "GuidaOperativa_POS-RT"
+title: "Guida Operativa al Collegamento Logico tra POS per pagamenti elettronici e Registratore Telematico"
 sidebar:
   nav: "docs"
 ---
-# Guida Operativa - Collegamento Logico POS-RT
 
 ## Sintesi Architetturale
 Il collegamento tra gli strumenti di pagamento elettronico (**POS**) e i Registratori Telematici (**RT**) è definito come un'associazione **logica** e non fisica. Questa operazione si effettua esclusivamente tramite l'interfaccia web disponibile nel portale "Fatture e Corrispettivi" dell'Agenzia delle Entrate.
