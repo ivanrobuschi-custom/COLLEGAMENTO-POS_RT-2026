@@ -2,10 +2,8 @@
 docs:
   - title: "Normativa e Provvedimenti"
     children:
-      - title: "Provvedimento AdE"
-        url: /provvedimento-del-31-ottobre-2025/
-      - title: "Guida Operativa"
-        url: /GuidaOperativa_POS-RT/
+       - title: "Guida Operativa"
+         url: /GuidaOperativa_POS-RT/
       
   - title: "Procedure Tecniche"
     children:

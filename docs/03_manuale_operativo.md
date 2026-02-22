@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Manuale Operativo Procedure Portale AdE"
+permalink: /Allegato-2_-Manuale-Operativo/
 sidebar:
   nav: "docs"
 ---

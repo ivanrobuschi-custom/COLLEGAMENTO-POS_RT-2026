@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Dubbi o problemi di collegamento?"
+permalink: /FAQ_collegamento_POS_RT/
 sidebar:
   nav: "docs"
 ---

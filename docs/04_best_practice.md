@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Best Practice per il collegamento POS-RT"
+permalink: /Allegato-1_-Suggerimenti-pratici-POS-rt/
 sidebar:
   nav: "docs"
 ---
