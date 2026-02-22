@@ -1,12 +1,25 @@
-title: Supporto Tecnico RT-POS 2026
-description: Documentazione Normativa Scambio Importo 26 - Custom SpA
-theme: jekyll-theme-cayman # Tema base compatibile con personalizzazioni rapide
+title: "Supporto Tecnico RT-POS 2026"
+description: "Documentazione Normativa Scambio Importo 26 - Custom SpA"
+url: "https://ivanrobuschi-custom.github.io"
+baseurl: "/COLLEGAMENTO-POS_RT-2026" # Nome esatto della tua cartella repository
 
-# Personalizzazioni
-logo: /logo.png
-font: Titillium Web
+# Configurazione Tema
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "air" # Una skin pulita, adatta a manuali tecnici
 
-# Impostazioni di pubblicazione
-remote_theme: pages-themes/cayman@v0.2.0
+# Impostazioni Generali
+locale: "it-IT"
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
+
+# Gestione Sidebar (Menu laterale)
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: "docs" # Punta alla navigazione che creeremo nel prossimo stepe
