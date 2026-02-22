@@ -1,11 +1,15 @@
 ---
 ---
+
 @charset "utf-8";
 
-// 1. Importa il tema base
-@import "minimal-mistakes/skins/air"; 
+/* 1️⃣ IMPORT TEMA COMPLETO (OBBLIGATORIO) */
+@import "minimal-mistakes";
 
-// 2. Caricamento Font Titillium Web
+/* 2️⃣ IMPORT SKIN */
+@import "minimal-mistakes/skins/air";
+
+/* 3️⃣ FONT CUSTOM */
 @font-face {
   font-family: 'Titillium Web';
   src: url('/TitilliumWeb-Regular.ttf') format('truetype');
@@ -14,58 +18,43 @@
 }
 
 body {
-  font-family: 'Titillium Web', sans-serif !important;
+  font-family: 'Titillium Web', sans-serif;
 }
 
-/* --- CONFIGURAZIONE HEADER E LOGO --- */
+/* ===============================
+   HEADER PERSONALIZZATO
+   =============================== */
 
-/* 1. Sfondo e Struttura della Testata */
 .masthead {
-  background-color: #B9C9D5 !important; /* Colore Custom */
+  background-color: #B9C9D5;
   border-bottom: 1px solid #8fa1b3;
-  padding: 10px 0 !important; /* Spaziatura verticale */
 }
 
-/* 2. Contenitore interno flessibile */
+/* Mantieni il layout originale del tema */
 .masthead__inner-wrap {
-  background-color: #B9C9D5 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important; /* Logo a sinistra, Menu a destra */
-  padding: 0 20px; /* Margine laterale di sicurezza */
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-/* 3. Area del Logo (Branding) */
+/* Branding */
 .masthead__branding {
-  margin: 0 !important;
-  padding: 0 !important;
-  flex-shrink: 0; /* Impedisce al logo di schiacciarsi */
   display: flex;
   align-items: center;
 }
 
-/* 4. Il Logo Immagine - Dimensioni Ottimizzate */
+/* LOGO */
 .masthead__branding img {
-  max-height: 50px !important; /* Aumentato per leggibilità */
-  width: auto !important;
-  display: block !important;
+  max-height: 42px;   /* dimensione sicura */
+  width: auto;
 }
 
-/* 5. NASCONDI IL TESTO DEL TITOLO (Cruciale) */
-/* Questo rimuove la scritta "Supporto Tecnico..." lasciando solo il logo */
-.masthead__branding .site-title, 
+/* Nasconde il titolo testuale */
 .site-title {
-  display: none !important;
+  display: none;
 }
 
-/* 6. Stile del Menu di Navigazione */
+/* Menu */
 .masthead__menu-item {
-  color: #2e3d49 !important; /* Grigio scuro leggibile */
-  font-weight: 600; /* Semibold */
-  font-size: 16px;
-}
-
-/* Link del logo (rimuove bordi o effetti strani) */
-.masthead__branding a {
-  text-decoration: none !important;
+  color: #2e3d49;
+  font-weight: 600;
 }

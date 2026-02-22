@@ -28,3 +28,5 @@ defaults:
 logo: "/logo.png"
 masthead:
   title: "" # Lascia vuoto se il logo contiene già il nome "Custom"
+sass:
+  style: compressed
