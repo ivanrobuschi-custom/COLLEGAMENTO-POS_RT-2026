@@ -1,3 +1,9 @@
+---
+layout: single
+title: "GuidaOperativa_POS-RT"
+sidebar:
+  nav: "docs"
+---
 # Guida Operativa - Collegamento Logico POS-RT
 
 ## Sintesi Architetturale

@@ -1,3 +1,9 @@
+---
+layout: single
+title: "Manuale Operativo"
+sidebar:
+  nav: "docs"
+---
 # Manuale Operativo - Procedure Portale AdE
 
 ## Percorso di Accesso

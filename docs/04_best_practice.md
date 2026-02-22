@@ -1,4 +1,15 @@
-# Best Practice - Organizzazione Multi-Punto Vendita
+---
+layout: single
+title: "Best Practice per il collegamento POS-RT"
+sidebar:
+  nav: "docs"
+---
+---
+layout: single
+title: "Scrivi Qui il Titolo della Pagina"
+sidebar:
+  nav: "docs"
+---# Best Practice - Organizzazione Multi-Punto Vendita
 
 ## Strategia di Ricognizione Preliminare
 Per gli esercenti che gestiscono più Registratori Telematici (RT) distribuiti su diversi punti vendita, è fondamentale eseguire una **ricognizione fisica** prima di accedere al portale dell'Agenzia delle Entrate. Questo censimento preventivo riduce drasticamente il rischio di errori di associazione.
