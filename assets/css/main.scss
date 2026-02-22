@@ -1,0 +1,43 @@
+---
+---
+@charset "utf-8";
+
+// 1. Importa il tema base (skin "air")
+@import "minimal-mistakes/skins/air"; 
+
+// 2. Caricamento Font Titillium Web Locale
+@font-face {
+  font-family: 'Titillium Web';
+  src: url('/TitilliumWeb-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// 3. Sovrascrittura Colori Istituzionali Custom SpA (#B9C9D5)
+
+// Applica il font a tutto il sito
+body {
+  font-family: 'Titillium Web', -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif !important;
+}
+
+// Colora la barra superiore (Masthead)
+.masthead {
+  background-color: #B9C9D5 !important; // Il tuo colore CMYK convertito
+  border-bottom: 1px solid #8fa1b3;
+}
+
+// Colora il menu di navigazione interno alla barra
+.masthead__inner-wrap {
+  background-color: #B9C9D5 !important;
+}
+
+// Assicura che i link del menu siano leggibili (Grigio scuro)
+.masthead__menu-item {
+  color: #2e3d49 !important; 
+  font-weight: bold;
+}
+
+// Correzione per il logo (ridimensionamento se necessario)
+.masthead__menu-item--logo img {
+    max-height: 50px; // Aggiusta questo valore se il logo è troppo grande/piccolo
+}
