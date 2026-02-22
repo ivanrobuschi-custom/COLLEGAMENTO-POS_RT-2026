@@ -80,5 +80,5 @@ La sezione **POS non collegati** elenca i dispositivi comunicati dagli Acquirer 
 
 [Allegato 2_ Manuale Operativo](../Allegato%202_%20Manuale%20Operativo.pdf)  
   
-[Torna all'Indice Generale](../README.md) 
+[Torna all'Indice Generale](../index.md) 
  

@@ -47,4 +47,4 @@ sidebar:
 
 [FAQ_collegamento_POS_RT](../FAQ_collegamento_POS_RT.pdf)  
 
-[Torna all'Indice Generale](../README.md)  
+[Torna all'Indice Generale](../index.md)  

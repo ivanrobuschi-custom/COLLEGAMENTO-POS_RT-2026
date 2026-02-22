@@ -59,4 +59,4 @@ In caso di disallineamento bloccante tra i dati presenti sul portale "Fatture e 
 
 [Suggerimenti pratici POS-rt](../Allegato%201_%20Suggerimenti%20pratici%20POS-rt.pdf)  
 
-[Torna all'Indice Generale](../README.md)
+[Torna all'Indice Generale](../index.md)

@@ -53,4 +53,4 @@ Per i **POS** attivati o modificati successivamente alla fase di avvio (gennaio 
 
 [GuidaOperativa_POS-RT](../GuidaOperativa_POS-RT.pdf)  
 
-[Torna all'Indice Generale](../README.md)  
+[Torna all'Indice Generale](../index.md)  
