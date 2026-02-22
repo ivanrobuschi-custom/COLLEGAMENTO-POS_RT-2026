@@ -19,14 +19,12 @@ body {
   font-family: 'Titillium Web', sans-serif !important;
 }
 
-/* --- REGOLE PER I TITOLI (NUOVO: CENTRATURA) --- */
-/* Applica il font Titillium e centra H1, H2, H3 */
+/* --- REGOLE PER I TITOLI --- */
 h1, h2, h3, .site-title, .page__title, .archive__item-title {
   font-family: 'Titillium Web', sans-serif !important;
-  text-align: center !important; /* Centra i titoli */
+  text-align: center !important; 
 }
 
-/* Per sicurezza centriamo anche i titoli dentro i contenuti */
 .page__content h1, .page__content h2, .page__content h3 {
   text-align: center !important;
 }
@@ -35,46 +33,55 @@ h1, h2, h3, .site-title, .page__title, .archive__item-title {
    HEADER CORPORATE CUSTOM SPA
    =============================== */
 
-/* 1. Il contenitore PRINCIPALE */
+/* 1. Il contenitore PRINCIPALE (Sfondo a tutta larghezza) */
 .masthead {
-  background-color: #D0E5F2 !important; /* Colore Custom Blue 05 */
+  background-color: #D0E5F2 !important; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
   border-bottom: none !important;
   padding: 10px 0 !important;
+  width: 100%; /* Occupa tutto lo schermo */
 }
 
-/* 2. Il contenitore INTERNO (Trasparente) */
+/* 2. Il contenitore INTERNO (Logo + Titolo) - QUI GESTISCI LA LARGHEZZA */
 .masthead__inner-wrap {
   background-color: transparent !important; 
-  padding: 0 2rem;
-  /* Permette al contenuto di espandersi se il logo è largo */
-  max-width: 100% !important; 
+  
+  /* --- GESTIONE DIMENSIONI --- */
+  /* Cambia questo valore per stringere o allargare il contenuto dell'header */
+  max-width: 1280px !important;  
+  /* --------------------------- */
+
+  width: 100%;
+  margin: 0 auto !important; /* Questo comando CENTRA il blocco nella pagina */
+  padding: 0 2rem; /* Margine di sicurezza laterale */
+  
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important; /* Allinea tutto a sinistra dentro la scatola centrata */
 }
 
-/* 3. Branding (IL CONTENITORE DEL LOGO - QUI ERA IL BLOCCO) */
+/* 3. Branding (Raggruppamento Logo + Testo) */
 .masthead__branding {
   background: transparent !important;
   display: flex !important;
   align-items: center !important;
+  flex-grow: 1; /* Occupa lo spazio disponibile */
   
-  /* SBLOCCO DIMENSIONI: Rimuoviamo i limiti di larghezza */
   max-width: none !important; 
-  min-width: 0 !important;
-  width: auto !important;
   margin-right: 20px;
 }
 
 /* 4. LOGO (IMMAGINE) */
 .masthead__branding img {
-  height: 90px !important;      /* Forza l'altezza a 90px */
-  max-height: 90px !important;  /* Assicura che non venga schiacciato */
-  width: auto !important;       /* La larghezza si adatta automaticamente */
-  max-width: none !important;   /* Permette all'immagine di essere larga quanto serve */
+  height: 90px !important;      
+  max-height: 90px !important;  
+  width: auto !important;       
+  max-width: none !important;   
   display: block;
   background: transparent !important;
 }
 
-/* 5. TITOLO DEL SITO (Accanto al logo) */
+/* 5. TITOLO DEL SITO */
 .site-title {
   display: block !important;
   background-color: transparent !important;
@@ -86,17 +93,17 @@ h1, h2, h3, .site-title, .page__title, .archive__item-title {
   
   align-self: center;
   margin: 0 !important;
-  text-align: left !important; /* Il titolo nell'header sta meglio a sinistra vicino al logo */
+  text-align: left !important; 
 }
 
-/* 6. MENU DI NAVIGAZIONE */
+/* 6. MENU (Toggle per mobile) */
+.masthead__menu {
+    float: right; /* Mantiene il menu a destra */
+}
+
 .masthead__menu-item {
   font-family: 'Titillium Web', sans-serif !important;
   font-weight: 600;
   color: #183640 !important;
   background-color: transparent !important;
-}
-
-.masthead__menu-item:hover {
-  text-decoration: underline;
 }
