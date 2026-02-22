@@ -14,70 +14,89 @@
   font-style: normal;
 }
 
+/* 3. APPLICAZIONE FONT GLOBALE */
 body {
   font-family: 'Titillium Web', sans-serif !important;
+}
+
+/* --- REGOLE PER I TITOLI (NUOVO: CENTRATURA) --- */
+/* Applica il font Titillium e centra H1, H2, H3 */
+h1, h2, h3, .site-title, .page__title, .archive__item-title {
+  font-family: 'Titillium Web', sans-serif !important;
+  text-align: center !important; /* Centra i titoli */
+}
+
+/* Per sicurezza centriamo anche i titoli dentro i contenuti */
+.page__content h1, .page__content h2, .page__content h3 {
+  text-align: center !important;
 }
 
 /* ===============================
    HEADER CORPORATE CUSTOM SPA
    =============================== */
 
+/* 1. Il contenitore PRINCIPALE */
 .masthead {
-  /* Sfondo Custom Blue 05 (#D0E5F2) */
-  background-color: #D0E5F2 !important;
-  
-  /* CORREZIONE OMBRA: Rimosso 'solid', usata ombra sfumata elegante */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
+  background-color: #D0E5F2 !important; /* Colore Custom Blue 05 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
   border-bottom: none !important;
-  
-  padding: 15px 0 !important;
+  padding: 10px 0 !important;
 }
 
+/* 2. Il contenitore INTERNO (Trasparente) */
 .masthead__inner-wrap {
-  background-color: transparent !important;
-  padding: 0 2rem; /* Spazio laterale */
+  background-color: transparent !important; 
+  padding: 0 2rem;
+  /* Permette al contenuto di espandersi se il logo è largo */
+  max-width: 100% !important; 
 }
 
-/* --- LOGO --- */
-.masthead__branding img {
-  /* Dimensione aumentata a 90px come da linee guida */
-  max-height: 90px !important; 
-  width: auto !important;
-  display: block;
-  margin-right: 20px; /* Spazio tra logo e titolo */
-}
-
-/* --- TITOLO ACCANTO AL LOGO --- */
-.site-title {
-  /* Lo rendiamo visibile (prima era display: none) */
-  display: block !important;
+/* 3. Branding (IL CONTENITORE DEL LOGO - QUI ERA IL BLOCCO) */
+.masthead__branding {
+  background: transparent !important;
+  display: flex !important;
+  align-items: center !important;
   
-  /* Stile Font e Colore (Custom Blue 01) */
+  /* SBLOCCO DIMENSIONI: Rimuoviamo i limiti di larghezza */
+  max-width: none !important; 
+  min-width: 0 !important;
+  width: auto !important;
+  margin-right: 20px;
+}
+
+/* 4. LOGO (IMMAGINE) */
+.masthead__branding img {
+  height: 90px !important;      /* Forza l'altezza a 90px */
+  max-height: 90px !important;  /* Assicura che non venga schiacciato */
+  width: auto !important;       /* La larghezza si adatta automaticamente */
+  max-width: none !important;   /* Permette all'immagine di essere larga quanto serve */
+  display: block;
+  background: transparent !important;
+}
+
+/* 5. TITOLO DEL SITO (Accanto al logo) */
+.site-title {
+  display: block !important;
+  background-color: transparent !important;
+  
   font-family: 'Titillium Web', sans-serif !important;
   font-size: 26px !important;
-  font-weight: 700 !important; /* Grassetto */
-  color: #183640 !important;   /* Colore scuro istituzionale */
+  font-weight: 700 !important;
+  color: #183640 !important;
   
   align-self: center;
   margin: 0 !important;
+  text-align: left !important; /* Il titolo nell'header sta meglio a sinistra vicino al logo */
 }
 
-/* Contenitore Logo + Titolo */
-.masthead__branding {
-  display: flex !important;
-  align-items: center !important;
-  float: left;
-}
-
-/* --- MENU DI NAVIGAZIONE --- */
+/* 6. MENU DI NAVIGAZIONE */
 .masthead__menu-item {
   font-family: 'Titillium Web', sans-serif !important;
   font-weight: 600;
-  color: #183640 !important; /* Colore scuro istituzionale */
-  opacity: 0.9;
+  color: #183640 !important;
+  background-color: transparent !important;
 }
 
 .masthead__menu-item:hover {
   text-decoration: underline;
-  opacity: 1;
 }
