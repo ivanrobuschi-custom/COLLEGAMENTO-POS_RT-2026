@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Guida Operativa al Collegamento Logico tra POS per pagamenti elettronici e Registratore Telematico"
+title: "Collegamento Logico tra POS e Registratore Telematico"
 permalink: /GuidaOperativa_POS-RT/
 sidebar:
   nav: "docs"
