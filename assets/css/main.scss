@@ -36,7 +36,7 @@ h1, h2, h3, .site-title, .page__title, .archive__item-title {
 /* 1. Il contenitore PRINCIPALE (Sfondo a tutta larghezza) */
 .masthead {
   background-color: #D0E5F2 !important; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2) !important;
   border-bottom: none !important;
   padding: 10px 0 !important;
   width: 100%; /* Occupa tutto lo schermo */
@@ -73,8 +73,8 @@ h1, h2, h3, .site-title, .page__title, .archive__item-title {
 
 /* 4. LOGO (IMMAGINE) */
 .masthead__branding img {
-  height: 180px !important;      
-  max-height: 180px !important;  
+  height: 360px !important;      
+  max-height: 360px !important;  
   width: auto !important;       
   max-width: none !important;   
   display: block;
@@ -98,7 +98,7 @@ h1, h2, h3, .site-title, .page__title, .archive__item-title {
 
 /* 6. MENU (Toggle per mobile) */
 .masthead__menu {
-    float: right; /* Mantiene il menu a destra */
+    float: right !important; /* Mantiene il menu a destra */
 }
 
 .masthead__menu-item {
